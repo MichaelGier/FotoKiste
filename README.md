@@ -1,1 +1,1 @@
-Meine FotoKiste
+* Meine FotoKiste
