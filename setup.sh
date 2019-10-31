@@ -12,4 +12,5 @@ echo "Abhängigkeiten werden installiert"
 yes | sudo apt install apache2 php7.0 php7.0-gd libav-tools git
 
 echo "Installation der FotoKiste"
-git clone https://github.com/ 
+git clone https://github.com/MichaelGier/FotoKiste.git /home/pi/fotokiste
+
