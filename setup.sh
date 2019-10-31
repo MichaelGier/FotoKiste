@@ -9,7 +9,7 @@ sudo apt update
 yes | sudo apt dist-upgrade
 
 echo "Abhängigkeiten werden installiert"
-yes | sudo apt install apache2 php7.1 ffmpeg git
+yes | sudo apt install apache2 php7.1 php.7.1-gd ffmpeg git
 
 echo "Installation der FotoKiste"
 git clone https://github.com/MichaelGier/FotoKiste.git /home/pi/fotokiste
