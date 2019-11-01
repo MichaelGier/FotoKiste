@@ -15,18 +15,18 @@ from PyQt5.QtWidgets import QApplication, QDialog
 from PyQt5.QtWebKitWidgets import QWebView
 from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow
 
-if not fotoboxCfg['nopi']:
+if not fotokisteCfg['nopi']:
     try:
         from picamera import PiCamera
     except ImportError:
         print("PiCamera nicht gefunden - Simulation eingeschaltet")
-        fotoboxCfg['nopi'] = True
+        fotokisteCfg['nopi'] = True
 
     try:
         import RPi.GPIO as GPIO
     except ImportError:
         print("RPi GPIO nicht gefunden - Simulation eingeschaltet")
-        fotoboxCfg['nopi'] = True
+        fotokisteCfg['nopi'] = True
 
 from shutil import copyfile, move
 from stat import S_ISREG, ST_MTIME, ST_MODE
