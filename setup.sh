@@ -20,7 +20,7 @@ yes | sudo apt install apache2 php7.1 ffmpeg git xorg python3 python3-picamera p
 echo "********************************"
 echo "*  Installation der FotoKiste  *"
 echo "********************************"
-git clone https://github.com/MichaelGier/FotoKiste.git /home/pi/fotokiste
+git clone https://github.com/MichaelGier/FotoKiste.git /home/pi/fotobox
 
 echo "*****************************"
 echo "*  Konfiguration AutoStart  *"
@@ -29,7 +29,7 @@ mkdir -p ~/.config/openbox
 echo "xset s noblank" >> ~/.config/openbox/autostart
 echo "xset s off" >> ~/.config/openbox/autostart
 echo "xset -dpms" >> ~/.config/openbox/autostart
-echo "cd ~/fotokiste/ ; python3 fotokiste.py | tee fotokiste.log" >> ~/.config/openbox/autostart
+echo "cd ~/fotobox/ ; python3 fotobox.py | tee fotobox.log" >> ~/.config/openbox/autostart
 
 # GUI-Boot with autologin
 sudo raspi-config nonint do_boot_behaviour B4
