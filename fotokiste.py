@@ -40,7 +40,7 @@ class Ui_Form_mod(object):
     Form.setHtml("Initializing...")
     self.countdownTime = fotoboxCfg['countdown']
     self.entries = None
-    self.tplFooterOrg = "Fotobox 0.2 · © Florian Knodt · BitBastelei//Adlerweb · www.adlerweb.info"
+    self.tplFooterOrg = "Fotobox"
     self.tplImage = "init.png"
     self.tplFooter = self.tplFooterOrg
     self.tplInstruct = "Instruction placeholder"
