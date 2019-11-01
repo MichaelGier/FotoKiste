@@ -254,7 +254,7 @@ class Ui_Form_mod(object):
     self.tplImage = self.entries[self.viewerIndex][1]
     self.tplFooter = "Foto " + str(self.viewerIndex+1) + \
       ' von ' + str(len(self.entries)) + \
-      " · " + str(os.path.basename(self.entries[self.viewerIndex][1]))
+      ' . ' + str(os.path.basename(self.entries[self.viewerIndex][1]))
     
     self.updateHtml(Form)
 
