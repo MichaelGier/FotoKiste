@@ -15,7 +15,7 @@ yes | sudo apt dist-upgrade
 echo "***************************************"
 echo "*  Abhängigkeiten werden installiert  *"
 echo "***************************************"
-yes | sudo apt install apache2 php7.1 php.7.1-gd ffmpeg git
+yes | sudo apt install apache2 php7.1 php.7.1-gd ffmpeg git xorg python3 python3-picamera python3-pyqt5 python3-pyqt5.qtwebkit lightdm python3-rpi.gpio
 
 echo "********************************"
 echo "*  Installation der FotoKiste  *"
